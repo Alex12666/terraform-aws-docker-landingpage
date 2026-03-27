@@ -1,0 +1,36 @@
+# === TERRAFORM ===
+# Ignora arquivos de estado local (contêm informações sensíveis da tua conta)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+
+# Ignora o plano de execução (pode conter segredos)
+*.tfplan
+
+# === AWS & SEGURANÇA ===
+# NUNCA subas a tua chave privada para o GitHub!
+*.pem
+.aws/
+credentials
+access_key.txt
+
+# === DOCKER ===
+# Ignora logs e arquivos temporários do Docker
+*.log
+.docker/
+
+# === PYTHON (BACKEND) ===
+# Se usares ambiente virtual ou cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+ENV/
+
+# === SISTEMA OPERACIONAL ===
+.DS_Store
+Thumbs.db
